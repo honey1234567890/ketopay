@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="static/images/favicon.png" rel="icon" />
+<title>KetoPay</title>
+<meta name="description" content="This professional design html template is for build a Money Transfer and online payments website.">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Web Fonts
+============================================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i' type='text/css'>
+
+<!-- Stylesheet
+============================================= -->
+<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="static/vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap-select/css/bootstrap-select.min.css" />
+<link rel="stylesheet" type="text/css" href="static/vendor/currency-flags/css/currency-flags.min.css" />
+<link rel="stylesheet" type="text/css" href="static/css/stylesheet.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div data-loader="dual-ring"></div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+============================================= -->
+<div id="main-wrapper"> 
+  <!-- Header
+  ============================================= -->
+  <header id="header">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start"> 
+<!-- Logo
+          ============================= -->
+          <div class="logo"> <a class="d-flex" href="#" title="Payyed - HTML Template"><img src="static/images/logo.png" alt="Payyed" /></a> </div>
+          <!-- Logo end --> 
+          <!-- Collapse Button
+          ============================== -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+          <!-- Collapse Button end --> 
+          
+           <!-- Primary Navigation
+          ============================== -->
+          <nav class="primary-menu navbar navbar-expand-lg">
+            <div id="header-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li class="active"><a href="/send">Send/Request</a></li>
+              </ul>
+            </div>
+            </nav>  
+        
+          <!-- Primary Navigation end --> 
+        </div>
+        <div class="header-column justify-content-end"> 
+          <!-- Login & Signup Link
+          ============================== -->
+          <nav class="login-signup navbar navbar-expand">
+            <ul class="navbar-nav">
+            
+              <li class="align-items-center h-auto ml-sm-3"><a class="btn btn-outline-primary shadow-none d-none d-sm-block" href="/logout">Sign out</a></li>
+            </ul>
+          </nav>
+          <!-- Login & Signup Link end --> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Secondary menu
+  ============================================= -->
+  <div class="bg-primary">
+    <div class="container d-flex justify-content-center">
+      <ul class="nav secondary-nav">
+        <li class="nav-item"> <a class="nav-link" href="/send">Send</a></li>
+        <li class="nav-item"> <a class="nav-link active" href="/request">Request</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Secondary menu end --> 
+  
+  <!-- Content
+  ============================================= -->
+  <div id="content" class="py-4">
+    <div class="container">
+      <h2 class="font-weight-400 text-center mt-3">Accept Money</h2>
+      <p class="text-4 text-center mb-4">Accept your money anytime, from anywhere in the world.</p>
+      <div class="row">
+        <div class="col-md-8 col-lg-6 col-xl-5 mx-auto">
+          <div class="bg-light shadow-sm rounded p-3 p-sm-4 mb-4">
+            <h3 class="text-5 font-weight-400 mb-3">Personal Details</h3>
+            <!-- Send Money Form
+            ============================================= -->
+            <form id="form-send-money" action="/request" method="post">
+              <div class="form-group">
+                <label for="emailID">Recipient</label>
+                <input type="text" value="" class="form-control" data-bv-field="emailid" id="emailID" name="email" required placeholder="Enter Email Address">
+              </div>
+              <div class="form-group">
+                <label for="youSend">You Send</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" data-bv-field="youSend" id="youSend" name="amount" value="" placeholder="Enter Amount">
+                  <div class="input-group-append"> 
+                    <span class="input-group-text p-0">
+                    <select id="youSendCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" name="currency" required="">
+                      <optgroup label="Popular Currency">
+                      <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" selected="selected" value="US USD">USD</option>
+                      <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="AU AUD">AUD</option>
+                      <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="IN INR">INR</option>
+					            </optgroup>
+                      <option value="" data-divider="true">divider</option>
+                      <optgroup label="Other Currency">
+                      <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="AE AED">AED</option>
+                      <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentine peso" value="AR ARS">ARS</option>
+                      <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="AU AUD">AUD</option>
+                      <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladeshi taka" value="BD BDT">BDT</option>
+                      <option data-icon="currency-flag currency-flag-bgn mr-1" data-subtext="Bulgarian lev" value="BG BGN">BGN</option>
+                      <option data-icon="currency-flag currency-flag-brl mr-1" data-subtext="Brazilian real" value="BR BRL">BRL</option>
+                      <option data-icon="currency-flag currency-flag-cad mr-1" data-subtext="Canadian dollar" value="CA CAD">CAD</option>
+                      <option data-icon="currency-flag currency-flag-chf mr-1" data-subtext="Swiss franc" value="CH CHF">CHF</option>
+                      <option data-icon="currency-flag currency-flag-clp mr-1" data-subtext="Chilean peso" value="CL CLP">CLP</option>
+                      <option data-icon="currency-flag currency-flag-cny mr-1" data-subtext="Chinese yuan" value="CN CNY">CNY</option>
+                      <option data-icon="currency-flag currency-flag-czk mr-1" data-subtext="Czech koruna" value="CZ CZK">CZK</option>
+                      <option data-icon="currency-flag currency-flag-dkk mr-1" data-subtext="Danish krone" value="DK DKK">DKK</option>
+                      <option data-icon="currency-flag currency-flag-egp mr-1" data-subtext="Egyptian pound" value="EG EGP">EGP</option>
+                      <option data-icon="currency-flag currency-flag-eur mr-1" data-subtext="Euro" value="EU EUR">EUR</option>
+                      <option data-icon="currency-flag currency-flag-gbp mr-1" data-subtext="British pound" value="GB GBP">GBP</option>
+                      <option data-icon="currency-flag currency-flag-gel mr-1" data-subtext="Georgian lari" value="GE GEL">GEL</option>
+                      <option data-icon="currency-flag currency-flag-ghs mr-1" data-subtext="Ghanaian cedi" value="GH GHS">GHS</option>
+                      <option data-icon="currency-flag currency-flag-hkd mr-1" data-subtext="Hong Kong dollar" value="HK HKD">HKD</option>
+                      <option data-icon="currency-flag currency-flag-hrk mr-1" data-subtext="Croatian kuna" value="HR HRK">HRK</option>
+                      <option data-icon="currency-flag currency-flag-huf mr-1" data-subtext="Hungarian forint" value="HU HUF">HUF</option>
+                      <option data-icon="currency-flag currency-flag-idr mr-1" data-subtext="Indonesian rupiah" value="ID IDR">IDR</option>
+                      <option data-icon="currency-flag currency-flag-ils mr-1" data-subtext="Israeli shekel" value="IL ILS">ILS</option>
+                      <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="IN INR">INR</option>
+                      <option data-icon="currency-flag currency-flag-jpy mr-1" data-subtext="Japanese yen" value="JP JPY">JPY</option>
+                      <option data-icon="currency-flag currency-flag-kes mr-1" data-subtext="Kenyan shilling" value="KE KES">KES</option>
+                      <option data-icon="currency-flag currency-flag-krw mr-1" data-subtext="South Korean won" value="KR KRW">KRW</option>
+                      <option data-icon="currency-flag currency-flag-lkr mr-1" data-subtext="Sri Lankan rupee" value="LK LKR">LKR</option>
+                      <option data-icon="currency-flag currency-flag-mad mr-1" data-subtext="Moroccan dirham" value="MA MAD">MAD</option>
+                      <option data-icon="currency-flag currency-flag-mxn mr-1" data-subtext="Mexican peso" value="MX MXN">MXN</option>
+                      <option data-icon="currency-flag currency-flag-myr mr-1" data-subtext="Malaysian ringgit" value="MY MYR">MYR</option>
+                      <option data-icon="currency-flag currency-flag-ngn mr-1" data-subtext="Nigerian naira" value="NG NGN">NGN</option>
+                      <option data-icon="currency-flag currency-flag-nok mr-1" data-subtext="Norwegian krone" value="NO NOK">NOK</option>
+                      <option data-icon="currency-flag currency-flag-npr mr-1" data-subtext="Nepalese rupee" value="NP NPR">NPR</option>
+                      <option data-icon="currency-flag currency-flag-nzd mr-1" data-subtext="New Zealand dollar" value="NZ NZD">NZD</option>
+                      <option data-icon="currency-flag currency-flag-pen mr-1" data-subtext="Peruvian nuevo sol" value="PE PEN">PEN</option>
+                      <option data-icon="currency-flag currency-flag-php mr-1" data-subtext="Philippine peso" value="PH PHP">PHP</option>
+                      <option data-icon="currency-flag currency-flag-pkr mr-1" data-subtext="Pakistani rupee" value="PK PKR">PKR</option>
+                      <option data-icon="currency-flag currency-flag-pln mr-1" data-subtext="Polish złoty" value="PL PLN">PLN</option>
+                      <option data-icon="currency-flag currency-flag-ron mr-1" data-subtext="Romanian leu" value="RO RON">RON</option>
+                      <option data-icon="currency-flag currency-flag-rub mr-1" data-subtext="Russian rouble" value="RU RUB">RUB</option>
+                      <option data-icon="currency-flag currency-flag-sek mr-1" data-subtext="Swedish krona" value="SE SEK">SEK</option>
+                      <option data-icon="currency-flag currency-flag-sgd mr-1" data-subtext="Singapore dollar" value="SG SGD">SGD</option>
+                      <option data-icon="currency-flag currency-flag-thb mr-1" data-subtext="Thai baht" value="TH THB">THB</option>
+                      <option data-icon="currency-flag currency-flag-try mr-1" data-subtext="Turkish lira" value="TR TRY">TRY</option>
+                      <option data-icon="currency-flag currency-flag-uah mr-1" data-subtext="Ukrainian hryvnia" value="UA UAH">UAH</option>
+                      <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Ugandan shilling" value="UG UGX">UGX</option>
+                      <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="VN VND">VND</option>
+                      <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South African rand" value="ZA ZAR">ZAR</option>
+                      </optgroup>
+                    </select>
+                    </span> 
+                  </div>
+                </div>
+                </div>
+          
+            
+              </div>
+              <button class="btn btn-primary btn-block">Continue</button>
+            </form>
+            <!-- Send Money Form end --> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================================= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+      
+        
+      </div>
+      <div class="footer-copyright pt-3 pt-lg-2 mt-2">
+        <div class="row">
+          <div class="col-lg">
+            <p class="text-center text-lg-left mb-2 mb-lg-0">Copyright &copy; 2021 <a href="#">KetoPay</a>. All Rights Reserved.</p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  </footer>
+  <!-- Footer end --> 
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back to Top
+============================================= --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- Script --> 
+<script src="static/vendor/jquery/jquery.min.js"></script> 
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="static/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>  
+<script src="static/js/theme.js"></script>
+</body>
+</html>

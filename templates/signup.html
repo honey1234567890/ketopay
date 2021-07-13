@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="static/images/favicon.png" rel="icon" />
+<title>Sign Up | KetoPay</title>
+<meta name="description" content="This professional design html template is for build a Money Transfer and online payments website.">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+
+<!-- Web Fonts
+============================================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i' type='text/css'>
+
+<!-- Stylesheet
+============================================= -->
+<link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="static/vendor/currency-flags/css/currency-flags.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css" />
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+  <div data-loader="dual-ring"></div>
+</div>
+<!-- Preloader End -->
+
+<div id="main-wrapper" class="h-100">
+  <div class="container-fluid px-0 h-100">
+    <div class="row no-gutters h-100">
+      <div class="col-md-6">
+        <!-- Get Verified! Text
+        ============================================= -->
+        <div class="hero-wrap d-flex align-items-center h-100">
+          <div class="hero-mask opacity-8 bg-primary"></div>
+          <div class="hero-bg hero-bg-scroll" style="background-image:url('/static/images/bg/image-3.jpg');"></div>
+          <div class="hero-content mx-auto w-100 h-100 d-flex flex-column">
+            <div class="row  no-gutters">
+              <div class="col-10 col-lg-9 mx-auto">
+                <div class="logo mt-5 mb-5 mb-md-0"> <a class="d-flex" href="index.html" title="Payyed - HTML Template"><img src="static/images/logo.png" alt="Payyed"></a> </div>
+              </div>
+            </div>
+            <div class="row my-auto">
+              <div class="col-10 col-lg-9 mx-auto">
+                <h1 class="text-11 text-white mb-4">Get Verified!</h1>
+                <p class="text-4 text-white line-height-4 mb-5">Every day, Payyed makes thousands of customers happy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Get Verified! Text End -->
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <!-- SignUp Form
+        ============================================= -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col-11 col-lg-9 col-xl-8 mx-auto">
+              <h3 class="font-weight-400 mb-4">Sign Up</h3>
+              {% if existing_message %}
+                <div class="alert alert-danger">
+                  <center>{{existing_message}}</center>
+                </div> 
+                {% endif %}
+              <form action="/signup" id="loginForm" method="post">
+                
+                <label for="firstName">Full Name</label>
+                <div class="form-group" style="display:flex; justify-content: space-between;">
+                  
+                  <input type="text" class="form-control" id="firstName" name="Fname" required placeholder="First Name">
+
+                  
+                  <input type="text" class="form-control" id="LastName" name="Lname" required placeholder="Last Name">
+              
+                </div>
+                <div class="form-group">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" name="email" required placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <div class="input-group-append"> <span class="input-group-text p-0">
+                      <select id="youSendCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" name="country" required="">
+                        <optgroup label="Popular Countries">
+                        <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States of America" selected="selected" value="US +1 USD">United States of America(+1)</option>
+                        <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australia" value="AU +672 AUD">Australia(+672)</option>
+                        <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="India" value="IN +91 INR">India(+91)</option>
+                        <option data-icon="currency-flag currency-flag-gbp mr-1" data-subtext="U.K." value="GB +44 GBP">U.K.(+44)</option>
+                        </optgroup>
+                        <optgroup label="Other Countries">
+                        <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates" value="AE +971 AED">United Arab Emirates(+971)</option>
+                        <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentina" value="AR +54 ARS">Argentina(+54)</option>
+                        <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australia" value="AU +672 AUD">Australia(+672)</option>
+                        <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladesh" value="BD +880 BDT">Bangladesh(+880)</option>
+                        <option data-icon="currency-flag currency-flag-bgn mr-1" data-subtext="Bulgaria" value="BG +359 BGN">Bulgaria(+359)</option>
+                        <option data-icon="currency-flag currency-flag-brl mr-1" data-subtext="Brazil" value="BR +55 BRL">Brazil(+55)</option>
+                        <option data-icon="currency-flag currency-flag-cad mr-1" data-subtext="Canada" value="CA +1 CAD">Canada(+1)</option>
+                        <option data-icon="currency-flag currency-flag-chf mr-1" data-subtext="Switzerland" value="CH +41 CHF">Switzerland(+41)</option>
+                        <option data-icon="currency-flag currency-flag-clp mr-1" data-subtext="Chile" value="CL +56 CLP">Chile(+56)</option>
+                        <option data-icon="currency-flag currency-flag-cny mr-1" data-subtext="China" value="CN +86 CNY">China(+86)</option>
+                        <option data-icon="currency-flag currency-flag-czk mr-1" data-subtext="Czech Republic" value="CZ +420 CZK">Czech Republic(+420)</option>
+                        <option data-icon="currency-flag currency-flag-dkk mr-1" data-subtext="Denmark" value="DK +45 DKK">Denmark(+45)</option>
+                        <option data-icon="currency-flag currency-flag-egp mr-1" data-subtext="Egypt" value="EG +20 EGP">Egypt(+20)</option>
+                        <option data-icon="currency-flag currency-flag-gbp mr-1" data-subtext="U.K." value="GB +44 GBR">U.K.(+44)</option>
+                        <option data-icon="currency-flag currency-flag-gel mr-1" data-subtext="Georgia" value="GE +995 GEL">Georgia(+995)</option>
+                        <option data-icon="currency-flag currency-flag-ghs mr-1" data-subtext="Ghana" value="GH +233 GHS">Ghana(+233)</option>
+                        <option data-icon="currency-flag currency-flag-hkd mr-1" data-subtext="Hong Kong" value="HK +852 HKD">Hong Kong(+852)</option>
+                        <option data-icon="currency-flag currency-flag-hrk mr-1" data-subtext="Croatia" value="HR +385 HRK">Croatia(+385)</option>
+                        <option data-icon="currency-flag currency-flag-huf mr-1" data-subtext="Hungary" value="HU +36 HUF">Hungary(+36)</option>
+                        <option data-icon="currency-flag currency-flag-idr mr-1" data-subtext="Indonesia" value="ID +62 IDR">Indonesia(+62)</option>
+                        <option data-icon="currency-flag currency-flag-ils mr-1" data-subtext="Israel" value="IL +972 ILS">Israel(+972)</option>
+                        <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="India" value="IN +91 INR">India(+91)</option>
+                        <option data-icon="currency-flag currency-flag-jpy mr-1" data-subtext="Japan" value="JP +81 JPY">Japan(+81)</option>
+                        <option data-icon="currency-flag currency-flag-kes mr-1" data-subtext="Kenya" value="KE +254 KES">Kenya(+254)</option>
+                        <option data-icon="currency-flag currency-flag-krw mr-1" data-subtext="South Korea" value="KR +82 KRW">South Korea(+82)</option>
+                        <option data-icon="currency-flag currency-flag-lkr mr-1" data-subtext="Sri Lanka" value="LK +94 LKR">Sri Lanka(+92)</option>
+                        <option data-icon="currency-flag currency-flag-mad mr-1" data-subtext="Morocco" value="MA +212 MAD">Morocco(+212)</option>
+                        <option data-icon="currency-flag currency-flag-mxn mr-1" data-subtext="Mexico" value="MX +52 MXN">Mexico(+52)</option>
+                        <option data-icon="currency-flag currency-flag-myr mr-1" data-subtext="Malaysia" value="MY +60 MYR">Malaysia(+60)</option>
+                        <option data-icon="currency-flag currency-flag-ngn mr-1" data-subtext="Nigeria" value="NG +234 NGN">Nigeria(+234)</option>
+                        <option data-icon="currency-flag currency-flag-nok mr-1" data-subtext="Norway" value="NO +47 NOK">Norway(+47)</option>
+                        <option data-icon="currency-flag currency-flag-npr mr-1" data-subtext="Nepal" value="NP +977 NPR">Nepal(+977)</option>
+                        <option data-icon="currency-flag currency-flag-nzd mr-1" data-subtext="New Zealand" value="NZ +64 NZD">New Zealand(+64)</option>
+                        <option data-icon="currency-flag currency-flag-pen mr-1" data-subtext="Peru" value="PE +51 PEN">Peru(+51)</option>
+                        <option data-icon="currency-flag currency-flag-php mr-1" data-subtext="Philippines" value="PH +63 PHP">Philippines(+63)</option>
+                        <option data-icon="currency-flag currency-flag-pln mr-1" data-subtext="Poland" value="PL +48 PLN">Poland(+48)</option>
+                        <option data-icon="currency-flag currency-flag-ron mr-1" data-subtext="Romania" value="RO +40 RON">Romania(+40)</option>
+                        <option data-icon="currency-flag currency-flag-rub mr-1" data-subtext="Russia" value="RU +7 RUB">Russia(+7)</option>
+                        <option data-icon="currency-flag currency-flag-sek mr-1" data-subtext="Sweden" value="SE +46 SEK">Sweden(+46)</option>
+                        <option data-icon="currency-flag currency-flag-sgd mr-1" data-subtext="Singapore" value="SG +65 SGD">Singapore(+65)</option>
+                        <option data-icon="currency-flag currency-flag-thb mr-1" data-subtext="Thailand" value="TH +66 THB">Thailand(+66)</option>
+                        <option data-icon="currency-flag currency-flag-try mr-1" data-subtext="Turkey" value="TR +90 TRY">Turkey(+90)</option>
+                        <option data-icon="currency-flag currency-flag-uah mr-1" data-subtext="Ukrain" value="UA +380 UAH">Ukrain(+380)</option>
+                        <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Uganda" value="UG +256 UGX">Uganda(+256)</option>
+                        <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnam" value="VN +84 VND">Vietnam(+84)</option>
+                        <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South Africa" value="ZA +27 ZAR">South Africa(+27)</option>
+                        </optgroup>
+                      </select>
+                      </span> 
+                    </div>
+                </div>
+                <label for="mobileNumber">Mobile</label>
+                <div class="form-group" style="display:flex; justify-content: space-between;" >
+                  <input type="text" class="form-control" id="mobileNumber" name="mobile" required placeholder="Enter Your Mobile">
+                </div>
+                <div class="form-group">
+                  <label for="loginPassword">Password</label>
+                  <input type="password" class="form-control" id="loginPassword" name="user_pwd" required placeholder="Enter Password">
+                </div>
+                <button class="btn btn-primary btn-block my-4" type="submit">Sign Up</button>
+              </form>
+              <p class="text-3 text-center text-muted">Already have an account? <a class="btn-link" href="/login">Log In</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- SignUp Form End -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Back to Top
+============================================= --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- Script --> 
+<script src="/static/vendor/jquery/jquery.min.js"></script> 
+<script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>   
+<script src="/static/js/theme.js"></script>
+</body>
+</html>
