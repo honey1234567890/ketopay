@@ -95,7 +95,7 @@ def request_payment(amount,country,currency,customer_id,email):
  token = result['data']['id']
  requester_email_id=db.child("customers").child(customer_id).child("Profile/email").get().val()
  requester_transactions_data={
-     "checkout_id":token,
+     "id":token,
      "amount":amount+" "+currency,
      "action":"Requested from "+email,
      "status":"Processing",
@@ -105,7 +105,7 @@ def request_payment(amount,country,currency,customer_id,email):
  }
  payee_customer_id=get_customerId_by_email(email)
  payee_transaction_data={
-     "checkout_id":token,
+     "id":token,
      "amount":amount+" "+currency,
      "action":"Payment Pending for "+requester_email_id,
      "status":"Processing",
