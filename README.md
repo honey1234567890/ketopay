@@ -13,7 +13,7 @@ Installation of python is must for running the web-app at your machine.
 # 2. Install related requirements and modules to run the web-application - pip install -r requirements.txt
 ![image](https://user-images.githubusercontent.com/85008177/125609328-7cf80581-2bdf-46b9-8d2e-a9318173b09b.png)
 
-# 3. Now start the web-server by executing the command - flask run (if some error occurs, It has aroused because of some missing modules or it may happen the a particular module needs upgradation. Please resolve those issues to move forward.)
+# 3. Now start the web-server by executing the command - flask run (if some error occurs, It has aroused because of some missing modules or it may happen that a particular module needs upgradation. Please resolve those issues to move forward.)
   
  ![image](https://user-images.githubusercontent.com/85008177/125609510-7ee6873c-318b-4ce9-b9ee-b9d2a3793931.png)
  
