@@ -2,7 +2,7 @@ from utilities import make_request
 import requests
 import firebase_admin
 from firebase_admin import db
-from flask import Flask
+
 
 databaseURL = 'https://pythondatabase-1a4c2-default-rtdb.firebaseio.com/'
 cred_obj = firebase_admin.credentials.Certificate('pythondatabase-1a4c2-firebase-adminsdk-rv5ve-a9337d0952.json')
@@ -81,3 +81,6 @@ def total_transactions():
     ref = db.reference('/all_transactions')
     return len(list(ref.get()))
 
+
+
+print (total_transactions())

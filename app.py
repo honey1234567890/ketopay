@@ -228,6 +228,7 @@ def add_bank_account():
         answer.append(value)
       print(b)
       db.child("customers/"+cust_id+"/beneficiary").update(b)
+      db.child("customers/"+cust_id+"/beneficiary").update({"identification_type":"identification_id"})
       return redirect("/dashboard")  
     return render_template("add-bank-account.html",fields=c)
 

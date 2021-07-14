@@ -15,7 +15,8 @@ db=firebase.database()
 def walletDeposit(amount,country,currency,customer_id):
  checkout_page={
     "amount": amount,
-    "complete_payment_url": "http://www.google.com",
+    "complete_payment_url": "http://mediapipe-com.stackstaging.com/",
+    'complete_checkout_url': "http://mediapipe-com.stackstaging.com/",
     "country": country,
     "currency": currency,
     "customer": customer_id,
