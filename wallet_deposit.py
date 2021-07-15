@@ -15,12 +15,12 @@ db=firebase.database()
 def walletDeposit(amount,country,currency,customer_id):
  checkout_page={
     "amount": amount,
-    "complete_payment_url": "http://mediapipe-com.stackstaging.com/",
-    'complete_checkout_url': "http://mediapipe-com.stackstaging.com/",
+    "complete_payment_url": "https://ketopayment.herokuapp.com/sendsuccess",
+    'complete_checkout_url': "https://ketopayment.herokuapp.com/sendsuccess",
     "country": country,
     "currency": currency,
     "customer": customer_id,
-    "error_payment_url": "http://www.rapyd.net",
+    "error_payment_url": "https://ketopayment.herokuapp.com/dashboard",
     "merchant_reference_id": "950ae8c6-79",
     "language": "en",
     "metadata": {
