@@ -9,10 +9,10 @@ from customerObject.createCust import create_customer
 from flask import Flask, render_template, request, redirect, session, url_for
 
 import pyrebase
-import os
+
 
 app = Flask(__name__)
-app.secret_key=os.urandom(24)
+app.secret_key="ketopayisbestappIeverused24times"
 config = {
     "apiKey": "AIzaSyDi0s4cV7eeultcnZTEkyQp7FchO5L6TGo",
     "authDomain": "payment-gateway-f5a88.firebaseapp.com",
